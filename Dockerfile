@@ -11,9 +11,9 @@ RUN /bin/install_xtensa.sh
 
 LABEL org.opencontainers.image.created="${IMAGE_CREATED}" \
   org.opencontainers.image.authors="Gitea" \
-  org.opencontainers.image.url="https://gitea.izzys.place/gitea/runner-images" \
+  org.opencontainers.image.url="https://gitea.izzys.place/gitea/xtenxa-runner-images" \
   org.opencontainers.image.documentation="https://gitea.izzys.place/gitea/runner-images/src/branch/main/README.md" \
-  org.opencontainers.image.source="https://gitea.izzys.place/gitea/runner-images" \
+  org.opencontainers.image.source="https://gitea.izzys.place/gitea/xtensa-runner-images" \
   org.opencontainers.image.version="${IMAGE_VERSION}" \
   org.opencontainers.image.revision="${IMAGE_REVISION}" \
   org.opencontainers.image.vendor="Gitea" \
