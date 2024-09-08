@@ -1,0 +1,12 @@
+---
+version: "3.5"
+services:
+  ubuntu_xtensa:
+    image: gitea.izzys.place/izzy/ubuntu_xtensa:latest
+    container_name: ubuntu_xtensa
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        BASE_IMAGE_TAG: rust-latest
+    restart: unless-stopped
