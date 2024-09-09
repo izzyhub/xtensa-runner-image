@@ -13,5 +13,6 @@ echo "$PATH" >>"$GITHUB_PATH"
 #echo "$PATH" >> "$GITEA_PATH"
 echo "LIBCLANG_PATH=${LIBCLANG_PATH}" >>"$GITHUB_ENV"
 #echo "LIBCLANG_PATH=${LIBCLANG_PATH}" >> "$GITEA_ENV"
+rustup set profile complete
 rustup default esp
 rustup override unset

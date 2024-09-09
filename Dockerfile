@@ -6,10 +6,8 @@ ARG IMAGE_CREATED
 ARG IMAGE_VERSION
 ARG IMAGE_REVISION
 
-COPY install_rust.sh /bin/
-RUN /bin/install_rust.sh
 COPY install_xtensa.sh /bin/
-#RUN /bin/install_xtensa.sh
+RUN /bin/install_xtensa.sh
 
 LABEL org.opencontainers.image.created="${IMAGE_CREATED}" \
   org.opencontainers.image.authors="Gitea" \
