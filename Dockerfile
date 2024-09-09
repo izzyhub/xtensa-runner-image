@@ -6,12 +6,6 @@ ARG IMAGE_CREATED
 ARG IMAGE_VERSION
 ARG IMAGE_REVISION
 
-# > Force apt to not be interactive/not ask
-ENV DEBIAN_FRONTEND=noninteractive
-
-SHELL [ "/bin/bash", "--login", "-e", "-o", "pipefail", "-c" ]
-WORKDIR /tmp
-
 COPY install_rust.sh /bin/
 RUN /bin/install_rust.sh
 COPY install_xtensa.sh /bin/
